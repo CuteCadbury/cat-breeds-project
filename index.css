@@ -2,47 +2,69 @@
 body {
     margin: middle;
     font-family: monospace;
-    background-color: ;
+    background-color: plum;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background: radial-gradient(#AA7FC6, 0.5) */
  }
- 
+   
+ /*Another style body*/
+ /* body {
+   margin: middle;
+   font-family: monospace;
+   height: 99vh;
+   background: linear-gradient(135deg, #6504B5, purple);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+} */
  
  .logo{
     padding: 4rem 0;
-    /* border-bottom: 10px solid #6504B5; */
+    border-bottom: 20px solid #6504B5;
  }
+
  .logo p{
     font-size: 3rem;
     font-weight: bold;
-    color: #6504B5;
+    color: purple;
  }
  
+ .logo p span {
+    color: #6504B5;
+ }
 
-.search-element {
-   display: flex;
+.search-wrapper {
+   /* background-color: #6504B5; */
+   grid-template-columns: 9fr 3fr;
    flex-direction: column;
    gap: .25rem;
-}
-
-
-/* .search-element h3 {
+}  
+/* .search-wrapper h3 {
    color: none;
    font-size: none;
    font-weight: none;
    margin-top: 1.5rem;
 } */
 
-.search-element .form-control{
+.search-wrapper .form-control{
     padding: 0.5rem;
     font-size: 1rem;
-    /* width: auto; */
+    width: 18rem;
 }
 
-.search-list {
+.search-breed-list{
+   position: absolute;
+   right: 100;
+   top: 20%;
+   max-height: 500px;
+   overflow-y: scroll;
+   /* z-index: 10 */
+}
+
+.breed-list {
     position: absolute;
     right: 0;
     top: 100%;
@@ -53,12 +75,11 @@ body {
 
 .submit-btn{
     color: white;
-    font-size: small;
     background: #6504B5;
-    border: AA7FC6;
-    font-size: 0.8rem;
-    padding: .5em, .25em;
-    border-radius: .5em;
+    /* border: #AA7FC6; */
+    font-size: 1.1rem;
+    padding: .5em, .75em;
+    border-radius: .25em;
     cursor: pointer;
  }
 
@@ -124,9 +145,10 @@ input {
 }
 
 
-/* .temperament, .origin, .description, .lifespan {
+.temperament, .origin, .description, .lifespan {
    margin-bottom: .4rem;
-} */
+   text-align: left;
+}
 
 
 

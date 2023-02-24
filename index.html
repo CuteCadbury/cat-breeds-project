@@ -11,26 +11,29 @@
 <body>
    <div class="logo">
        <div class="container">
-           <p>"Cat Breed Information"</p>
+           <p>"<span>A</span>bout <span>B</span>reed <span>C</span>at"</p>
        </div>
    </div>
-   <div class="search-element">
+
+<!------------------Search Start----------------->
+   <div class="search-wrapper">
        <!-- <label for="search"> Search: </label> -->
        <!-- <h3>Search:</h3>  -->
-       <input type="text" class="form-control" placeholder="Search Cat Breed ..." id="search-input"> 
+       <input type="text" class="form-control" placeholder="Search Cat Breed ..." id="breedInput"> 
        <button class="submit-btn">Submit</button>
-       <div class="search-list" id="search-list">
-           <div class="search-list-item">
-               <div class="search-cat-breed">
-               </div>
+    </div>
+<!------------------Search End----------------->
 
-               <!-- <div class="search-item-info">
-                   <h3>Abyssinian</h3>
-               </div> -->
-           </div>
-   </div>
-<!---Search End-->
-<!---result start-->
+<!------------------Search List Start----------------->
+<!-- <div class="search-breed-list">
+    <div class="search-breed-info">
+        <h3>Abyssinian</h3>
+    </div>
+    <div class="breed-list" id="breed-list"></div>
+ </div> -->
+
+
+<!------------------result start---------------->
        <div class="card card-shadow">
            <div class="img">img</div>
            <h3 class="cat-breed">Abyssinian</h3>
@@ -46,7 +49,7 @@
            <div class="cat-origin"><b>Origin:</b> Egypt</div>
            <div class="card-footer"> -->
                <button class="delete-btn">Delete</button></div>
-       </div>
+       
 
 
        <!-- <div class="card card-shadow">
