@@ -1,18 +1,4 @@
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const selectBreed = document.querySelector('#breedInput')
-//     //const selectBreed = document.getElementById('breedInput')
-//     fetch('https://api.thecatapi.com/v1/breeds')
-//    .then(res => res.json())
-//    .then(data => {
-//     let result = ""
-//     data.forEach(breeds => {
-//         result += `<option>${breeds.name}</option>`
-//     })
-//     selectBreed.innerHTML = result;
-//    })
-//    .catch(err => console.log(err))
-// })
 
 document.addEventListener('DOMContentLoaded', () => {
     const selectBreed = document.querySelector('#selectBreed')
@@ -20,16 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://api.thecatapi.com/v1/breeds')
    .then(res => res.json())
    .then(data => {
+    let result=""
     data.forEach(breeds => {
-        console.log(breeds.name)
+        result += `<option>${breeds.name}</option>`
     })
+    selectBreed.innerHTML = result
    })
    .catch(err => console.log(err))
 })
-
-
-
-
 
 
 // //submit button when clicked

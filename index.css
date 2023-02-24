@@ -26,58 +26,51 @@ body {
     border-bottom: 20px solid #6504B5;
  }
 
+ .logo h2{
+   font-size: 3rem;
+   font-weight: bold;
+   color: purple;
+}
+
+.logo h2 span {
+   color: #6504B5;
+}
+
  .logo p{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: purple;
  }
- 
- .logo p span {
-    color: #6504B5;
- }
 
-.search-wrapper {
-   /* background-color: #6504B5; */
+/* .search-wrapper {
    grid-template-columns: 9fr 3fr;
    flex-direction: column;
    gap: .25rem;
-}  
-/* .search-wrapper h3 {
-   color: none;
-   font-size: none;
-   font-weight: none;
-   margin-top: 1.5rem;
-} */
-
-.search-wrapper .form-control{
+}   */
+/* .search-wrapper .form-control{
     padding: 0.5rem;
     font-size: 1rem;
     width: 18rem;
-}
-
-.search-breed-list{
-   position: absolute;
-   right: 100;
-   top: 20%;
-   max-height: 500px;
-   overflow-y: scroll;
-   /* z-index: 10 */
-}
-
-.breed-list {
+} */
+/* .breed-list {
     position: absolute;
     right: 0;
     top: 100%;
     max-height: 500px;
     overflow-y: scroll;
     z-index: 10
- }
+ } */
+
+#selectBreed {
+   font-size: 1.3rem;
+   cursor: pointer;
+}
 
 .submit-btn{
     color: white;
     background: #6504B5;
     /* border: #AA7FC6; */
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: .5em, .75em;
     border-radius: .25em;
     cursor: pointer;
@@ -117,12 +110,10 @@ input {
    margin: 1rem 2rem
 }
 
-
 .card-img{
    padding: 0;
    overflow: hidden;
 }
-
 
 .card-img > img{
    display: block;
@@ -140,17 +131,14 @@ input {
 }
 
 
-.cat-temperament, .cat-origin, .cat-description, .cat-lifespan {
-   margin-bottom: .4rem;
-}
-
-
 .temperament, .origin, .description, .lifespan {
    margin-bottom: .4rem;
    text-align: left;
 }
 
-
+/* .cat-temperament, .cat-origin, .cat-description, .cat-lifespan {
+   margin-bottom: .4rem;
+} */
 
 
 .delete-btn{
@@ -168,27 +156,6 @@ input {
 .hide {
    display: none
 }
-
-
-/*
-Doesn't work
-.card-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-} */
-/* .delete-btn:hover, .delete-btn:focus {
-   background: #6504B5(200, 50%, 60%);
-} */
-
-
-/* #title-section {
-   height: 5em;
-   size: large;
-}
-
-
-
-
 
 
 
