@@ -16,14 +16,19 @@
        </div>
    </div>
 
-<!------------------Search Start----------------->
+<!------------------Search Original----------------->
    <!-- <div class="search-wrapper">
-       <input type="text" class="form-control" placeholder="Search Cat Breed ..." id="breedInput"> 
+       <input 
+            id="breedInput"     
+            type="text" 
+            class="form-control" 
+            placeholder="Enter Cat Breed ..." 
+            > 
        <button class="submit-btn">Submit</button>
     </div> -->
 <!------------------------------------------>
 
-<!------------------Select Start 1----------------->
+<!------------------Dropdown Original----------------->
 <div class="select-wrapper">
         <select id="selectBreed" name="selectBreed"></select>
         <button class="submit-btn">Submit</button>
@@ -32,18 +37,18 @@
 
 
 
-<!------------------result start---------------->
+<!------------------Result Select---------------->
        <div class="card card-shadow">
-        <div class="card-img">
+        <!-- <div class="card-img">
             <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg">
-        </div>
+        </div> -->
            <h3 class="cat-breed">Abyssinian</h3>
-           <ul class="cat-info">
             <li class="description"><b>Description:</b> The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.</li>
             <li class="temperament"><b>Temperament:</b> Active, Energetic, Independent, Intelligent, Gentle</li>
             <li class="lifespan"><b>Life_span:</b> 14 - 15</li>
             <li class="origin"><b>Origin:</b> Egypt</li>
-           </ul>
+           <button class="delete-btn">Delete</button>
+        </div>
 
            <!-- <div class="card-img">
                <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg">
@@ -54,8 +59,23 @@
            <div class="cat-origin"><b>Origin:</b> Egypt</div>
            <div class="card-footer"> -->
 
-               <button class="delete-btn">Delete</button>
-            </div>
 
-</body>
+<!------------------Result Search---------------->
+     
+        <!-- <div class="card">
+            <div class="card-img">
+               <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg">
+           </div>
+           <div class="cat-breed">
+            <h3>Abyssinian</h3>
+            <p><b>Description:</b> The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.</p>
+            <p><b>Temperament:</b> Active, Energetic, Independent, Intelligent, Gentle.</p>
+            <p><b>Life_span:</b> 14 - 15.</p>
+            <p><b>Origin:</b> Egypt.</p>
+           </div>
+           <button class="delete-btn">Delete</button>
+        </div> -->
+
+   <div id="breed-collection"></div>
+    </body>
 </html>

@@ -23,7 +23,7 @@ body {
  
  .logo{
     padding: 4rem 0;
-    border-bottom: 20px solid #6504B5;
+    /* border-bottom: 5px solid #6504B5; */
  }
 
  .logo h2{
@@ -62,6 +62,7 @@ body {
  } */
 
 #selectBreed {
+   background-color: white;
    font-size: 1.3rem;
    cursor: pointer;
 }
@@ -90,29 +91,30 @@ input {
    text-align: center;
    border: 7px solid #6504B5;
    border-radius: 1rem;
-   width: 15rem;
-   height: 25rem;
+   width: 20rem;
+   height: 40rem;
    margin: 1rem 2rem;
    overflow: hidden;
 }
 
 
-.card.card-shadow {
+/* .card.card-shadow {
    background: #FFFF;
    padding: 1rem;
    text-align: center;
    border: none;
    box-shadow: 0 2px 5px 0;
-   /* border-radius: 1rem; */
    width: 15rem;
-   height: 25rem;
-   /* display: -ms-inline-grid; */
-   margin: 1rem 2rem
-}
+   height: 30rem;
+   margin: 1rem 2rem;
+} */
 
 .card-img{
+   width: auto;
+   height: auto;
    padding: 0;
    overflow: hidden;
+   border-radius: .5em;
 }
 
 .card-img > img{
@@ -124,17 +126,26 @@ input {
 }
 
 
-.cat-breed {
-   font-size: 1.5rem;
-   margin-top: .5rem;
-   margin-bottom: .5rem;
+.cat-breed h3{
+   font-size: 1rem;
+   margin-top: .7rem;
+   margin-bottom: .2rem;
+   padding: .5px, 1px;
+   text-align: center;
 }
 
-
-.temperament, .origin, .description, .lifespan {
-   margin-bottom: .4rem;
+.cat-breed {
+   font-size: .8rem;
+   margin-top: .2rem;
+   margin-bottom: .5rem;
+   padding: .5px, 1px;
    text-align: left;
 }
+
+/* .temperament, .origin, .description, .lifespan {
+   margin-bottom: .4rem;
+   text-align: left;
+} */
 
 /* .cat-temperament, .cat-origin, .cat-description, .cat-lifespan {
    margin-bottom: .4rem;
@@ -151,7 +162,6 @@ input {
    border-radius: .25em;
    cursor: pointer;
 }
-
 
 .hide {
    display: none

@@ -1,8 +1,10 @@
-
-
-document.addEventListener('DOMContentLoaded', () => {
+//Dropdown
+document.addEventListener('DOMContentLoaded', (e) => {
     const selectBreed = document.querySelector('#selectBreed')
     //const selectBreed = document.getElementById('selectBreed')
+
+
+
     fetch('https://api.thecatapi.com/v1/breeds')
    .then(res => res.json())
    .then(data => {
@@ -13,19 +15,29 @@ document.addEventListener('DOMContentLoaded', () => {
     selectBreed.innerHTML = result
    })
    .catch(err => console.log(err))
-})
+    })
+
+   
 
 
-// //submit button when clicked
-// let submitBtn = document.getElementById("submit-btn")
+// let submitBtn = document.querySelector("#submit-btn")
+// let searchInput = document.getElementById("breed-input")
 
-// // let searchInput = document.getElementById("breed-input")
+// //    submit button when clicked
+// let submitBtn = document.querySelector("#submit-btn")
+// let searchInput = document.getElementById("breed-input")
 
 // submitBtn.addEventListener("click", () => {
-//     let catBreed = breedInput.value
-//     let catUrl = `https://api.thecatapi.com/v1/breeds`
-//     console.log(catUrl)
+// let catBreed = searchInput.value
+// let catUrl = "https://api.thecatapi.com/v1/breeds"
+
+// fetch("https://api.thecatapi.com/v1/breeds")
+// .then(res => res.json())
+// .then(data => {
+//     console.log(data)
 // })
+
+
 
 //delete when 'Delete' is clicked
 // const deleteBtn = document.getElementById("delete-btn")
@@ -33,3 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // deleteBtn.querySelector('.delete-btn').addEventListener('click', () => {
 //     deleteBtn.remove()
 // })
+
+document.querySelector("delete-btn").addEventListener("click", () => {
+    alert("Deleted!")
+})
