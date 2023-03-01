@@ -7,14 +7,30 @@ selectBreed.addEventListener("change", (e) => {
     console.log(e.target.value)
     const found = catObjects.find(catObj => e.target.value === catObj.id)
     console.log(found)
-})
+
+    const card = document.getElementById("breed-collection")
+    // const result = document.getElementById("breed-collection")
+    // result.textContent = `e.target.value`
+    // card.className = 'card'
+    card.innerHTML = `
+    <div class = "card">
+    <h3 id="cat-breed">${selectBreed.name}</h3>
+    <li id="description"><b>Description:</b> ${selectBreed.description} </li>
+    <li id="temperament"><b>Temperament:</b> ${selectBreed.temperament} </li>
+    <li id="lifespan"><b>Life_span:</b> ${selectBreed.lifespan} </li>
+    <li id="origin"><b>Origin:</b> ${selectBreed.origin} </li>
+    <button class="delete-btn">Delete</button>
+    `
+    // document.getElementById('selectBreed').append(card)
+    }
+)
 
 document.addEventListener('DOMContentLoaded', () => {
-
     fetch('https://api.thecatapi.com/v1/breeds')
    .then(res => res.json())
    .then(catArray => {
     catObjects = catArray
+
     catArray.forEach(catObject => {
         const catOPtion = document.createElement("option")
 
@@ -24,43 +40,39 @@ document.addEventListener('DOMContentLoaded', () => {
     })
    })
    .catch(err => console.log(err))
+
 })
 
-
-
-//delete when 'Delete' is clicked
-// 1.
-// const deleteBtn = document.getElementById("delete-btn")
-
-// deleteBtn.getElementById('.delete-btn').addEventListener('click', () => {
-//     console.log(deleteBtn)
-// })
-
-// 2.
-// document.querySelector("delete-btn").addEventListener("click", () => {
-//     alert("Deleted!")
-// })
-
-
-
-// let submitBtn = document.querySelector("#submit-btn")
-// let searchInput = document.getElementById("breed-input")
-
-// //    submit button when clicked
-// let submitBtn = document.querySelector("#submit-btn")
-// let searchInput = document.getElementById("breed-input")
-
-// submitBtn.addEventListener("click", () => {
-// let catBreed = searchInput.value
-// let catUrl = "https://api.thecatapi.com/v1/breeds"
-
-// fetch("https://api.thecatapi.com/v1/breeds")
-// .then(res => res.json())
-// .then(data => {
-//     console.log(data)
-// })
+// function addBreedNameToDom(){
+//     card.className = 'card'
+//     card.innerHTML = `
+//     <div class = "card card-shadow">
+//     <h3 id="cat-breed">${catObjects.name}</h3>
+//     <li id="description"><b>Description:</b> ${catObjects.description} </li>
+//     <li id="temperament"><b>Temperament:</b> ${catObjects.temperament} </li>
+//     <li id="lifespan"><b>Life_span:</b> ${catObjects.lifespan} </li>
+//     <li id="origin"><b>Origin:</b> ${catObjects.origin} </li>
+//     <button class="delete-btn">Delete</button>
+//     `
+//     document.getElementById('selectBreed').appendChild(card)
+//     }
 
 // <!--------------------------------------------------------->
+
+// function addBreedNameToDom(){
+//     card.className = 'card card-shadow'
+//     card.innerHTML = `
+//     <div class = "card card-shadow">
+//     <h3 class="cat-breed">${catObjects.name}</h3>
+//     <li class="description"><b>Description:</b> ${catObjects.description} </li>
+//     <li class="temperament"><b>Temperament:</b> ${catObjects.temperament} </li>
+//     <li class="lifespan"><b>Life_span:</b> ${catObjects.lifespan} </li>
+//     <li class="origin"><b>Origin:</b> ${catObjects.origin} </li>
+//     <button class="delete-btn">Delete</button>
+//     `
+//     document.getElementById('selectBreed').appendChild(card)
+//     }
+
 // let breeds =[]
 
 // function getBreedName(){
@@ -93,3 +105,16 @@ document.addEventListener('DOMContentLoaded', () => {
 //     })
 // }
 
+
+//delete when 'Delete' is clicked
+// 1.
+// const deleteBtn = document.getElementById("delete-btn")
+
+// deleteBtn.getElementById('.delete-btn').addEventListener('click', () => {
+//     console.log(deleteBtn)
+// })
+
+// 2.
+// document.querySelector("delete-btn").addEventListener("click", () => {
+//     alert("Deleted!")
+// })
