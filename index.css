@@ -48,7 +48,12 @@ body {
    cursor: pointer;
 }
 
+#breed-collection {
+   display: flex
+}
+
 .card {
+   align-items: left;
    background: #FFFF;
    padding: 1rem;
    text-align: center;
@@ -60,16 +65,9 @@ body {
    overflow: hidden;
 }
 
-/* .card.card-shadow {
-   background: #FFFF;
-   padding: 1rem;
-   text-align: center;
-   border: none;
+.card:hover {
    box-shadow: 0 2px 5px 0;
-   width: 15rem;
-   height: 30rem;
-   margin: 1rem 2rem;
-} */
+}
 
 .card-img{
    width: auto;
@@ -87,34 +85,7 @@ body {
    object-position: center;
 }
 
-
-/* .cat-breed h3{
-   font-size: 1rem;
-   margin-top: .7rem;
-   margin-bottom: .2rem;
-   padding: .5px, 1px;
-   text-align: center;
-} */
-
-/* .cat-breed {
-   font-size: .8rem;
-   margin-top: .2rem;
-   margin-bottom: .5rem;
-   padding: .5px, 1px;
-   text-align: left;
-} */
-
-/* .temperament, .origin, .description, .lifespan {
-   margin-bottom: .4rem;
-   text-align: left;
-} */
-
-/* .cat-temperament, .cat-origin, .cat-description, .cat-lifespan {
-   margin-bottom: .4rem;
-} */
-
-
-.delete-btn{
+button{
    color: white;
    font-size: small;
    background: #6504B5;
@@ -125,7 +96,6 @@ body {
    cursor: pointer;
 }
 
-
 .hide {
    display: none
 }
@@ -133,14 +103,3 @@ body {
 
 
 
-
-
-/* #header-img {
-   background-image: url("../images/~~~~~~~~");
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 100%;
-   left: 30%;
-   right: 30%;
-   height: 25em;
-} */
