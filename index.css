@@ -7,7 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
- }
+ } 
    
  /*Another style body*/
  /* body {
@@ -19,7 +19,7 @@ body {
    align-items: center;
    justify-content: center;
    flex-direction: column;
-} */
+}  */
  
  .logo{
     padding: 4rem 0;
@@ -42,48 +42,11 @@ body {
     color: purple;
  }
 
-/* .search-wrapper {
-   grid-template-columns: 9fr 3fr;
-   flex-direction: column;
-   gap: .25rem;
-}   */
-/* .search-wrapper .form-control{
-    padding: 0.5rem;
-    font-size: 1rem;
-    width: 18rem;
-} */
-/* .breed-list {
-    position: absolute;
-    right: 0;
-    top: 100%;
-    max-height: 500px;
-    overflow-y: scroll;
-    z-index: 10
- } */
-
 #selectBreed {
    background-color: white;
    font-size: 1.3rem;
    cursor: pointer;
 }
-
-.submit-btn{
-    color: white;
-    background: #6504B5;
-    /* border: #AA7FC6; */
-    font-size: 1.3rem;
-    padding: .5em, .75em;
-    border-radius: .25em;
-    cursor: pointer;
- }
-
-input {
-   font-size: 1rem ;
-   border: none;
-   border-radius: .1em;
-   border-bottom: 2px solid #6504B5;
-}
-
 
 .card {
    background: #FFFF;
@@ -92,11 +55,10 @@ input {
    border: 7px solid #6504B5;
    border-radius: 1rem;
    width: 20rem;
-   height: 40rem;
+   height: 46rem;
    margin: 1rem 2rem;
    overflow: hidden;
 }
-
 
 /* .card.card-shadow {
    background: #FFFF;
@@ -126,21 +88,21 @@ input {
 }
 
 
-.cat-breed h3{
+/* .cat-breed h3{
    font-size: 1rem;
    margin-top: .7rem;
    margin-bottom: .2rem;
    padding: .5px, 1px;
    text-align: center;
-}
+} */
 
-.cat-breed {
+/* .cat-breed {
    font-size: .8rem;
    margin-top: .2rem;
    margin-bottom: .5rem;
    padding: .5px, 1px;
    text-align: left;
-}
+} */
 
 /* .temperament, .origin, .description, .lifespan {
    margin-bottom: .4rem;
@@ -162,6 +124,7 @@ input {
    border-radius: .25em;
    cursor: pointer;
 }
+
 
 .hide {
    display: none
