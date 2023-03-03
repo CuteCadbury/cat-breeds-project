@@ -54,25 +54,3 @@ selectBreed.addEventListener("change", (e) => {
 })
 
 
-
-// selectBreed.addEventListener("change", (e) => {
-//     console.log(e.target.value)
-//     const found = catObjects.find(catObj => e.target.value === catObj.id)
-
-//     const card = document.getElementById("breed-collection")
-
-//     card.innerHTML = `
-//     <div class = "card">
-//     <div class="card-img">
-//     <img src = https://cdn2.thecatapi.com/images/${found.reference_image_id}.jpg>
-//     </div>
-//     <h3 id="cat-breed">${found.name}</h3>
-//     <li id="description"><b>Description:</b> ${found.description} </li>
-//     <li id="temperament"><b>Temperament:</b> ${found.temperament} </li>
-//     <li id="lifespan"><b>Life_span:</b> ${found.lifespan} </li>
-//     <li id="origin"><b>Origin:</b> ${found.origin} </li>
-//     <button class="delete-btn">Delete</button>
-//     `
-//     console.log(found)
-//     }
-// )
