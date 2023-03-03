@@ -16,6 +16,9 @@ To be more specific, when users select a cat breed from the dropdown. The breed 
 
 ## Installation
 
+* Fork repository
+* Clone the forked repository  
+* Commit and push
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
