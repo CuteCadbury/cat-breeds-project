@@ -1,17 +1,15 @@
-# cat-breed-project
-
-Finding Cat Breeds Using API 
+# Cat-Breed-Project
 
 
 ## Description
 
+Finding you're favorite Cat Breeds 
+
+This porject is a single page application using public api using HTML, CSS and JavaScript. 
+This allows users to find their favorite Cat Breeds 
+Users can select the breed by clicking, a card of cat breed description will show and 
 
 ## Installation
-
-
-## Usage
-
-
 ## How to Run It
 
 
@@ -30,5 +28,3 @@ Please make sure to update tests as appropriate.
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-
-## url of repository
