@@ -20,10 +20,9 @@ To be more specific, when users select a cat breed from the dropdown. The breed 
 * Clone the forked repository  
 * Commit and push
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Pull requests are welcome. 
+For major changes, I suggest users to open the issue first to discuss any changes you want.
+Also, make sure to update tests accordingly!
 
 
 
