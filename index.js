@@ -28,6 +28,7 @@ selectBreed.addEventListener("change", (e) => {
     console.log(found)
 
     const cardCollection = document.getElementById("breed-collection")
+    
     const card = document.createElement("div")
     card.className = 'card'
 

@@ -1,9 +1,8 @@
 # Cat-Breeds-Project
 
 
-The name of my project is ABC, which is an abbreviation for About Breeds Cat.
-ABC uses public api and uses three main front-end coding languages HTML, CSS and JavaScript. 
-
+My project name is ABC, which is an abbreviation for About Breeds Cat.
+This single-page application (SPA) uses public cat API and uses three main front-end coding languages HTML, CSS and JavaScript. 
 
 
 ## Description
