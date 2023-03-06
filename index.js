@@ -28,9 +28,6 @@ selectBreed.addEventListener("change", (e) => {
     const found = catObjects.find(catObj => e.target.value === catObj.id)
     console.log(found)
 
-    const cardCollection = document.getElementById("breed-collection")
-    cardCollection.append(card)
-
     const card = document.createElement("div")
     card.className = 'card'
     card.innerHTML = `
@@ -43,6 +40,8 @@ selectBreed.addEventListener("change", (e) => {
     <li id="lifespan"><b>Life_span:</b> ${found.lifespan} </li>
     <li id="origin"><b>Origin:</b> ${found.origin} </li>
     `
+    const cardCollection = document.getElementById("breed-collection")
+    cardCollection.append(card)
 
     const deleteBtn = document.createElement("button")
     deleteBtn.addEventListener('click', () => {
