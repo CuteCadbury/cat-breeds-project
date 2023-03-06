@@ -1,6 +1,6 @@
 
 const selectBreed = document.querySelector('#selectBreed')
-//or const selectBreed = document.getElementById('selectBreed')
+
 let catObjects 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,35 +12,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     catArray.forEach(catObject => {
         const catOPtion = document.createElement("option")
-
         catOPtion.value = catObject.id
         catOPtion.innerText = catObject.name
+
         selectBreed.append(catOPtion)
     }) 
    })
    .catch(err => console.log(err))
 })
 
+
 selectBreed.addEventListener("change", (e) => {
     e.preventDefault()
-    console.log(e.target.value)
+
     const found = catObjects.find(catObj => e.target.value === catObj.id)
     console.log(found)
 
-    const cardCollection = document.getElementById("breed-collection")
-    
     const card = document.createElement("div")
     card.className = 'card'
-
-    const deleteBtn = document.createElement("button")
-    deleteBtn.addEventListener('click', () => {
-        card.remove()
-    })
-
-    deleteBtn.innerText = 'Delete'
-
-    cardCollection.append(card)
-    
     card.innerHTML = `
     <div class="card-img">
     <img src = https://cdn2.thecatapi.com/images/${found.reference_image_id}.jpg>
@@ -51,6 +40,16 @@ selectBreed.addEventListener("change", (e) => {
     <li id="lifespan"><b>Life_span:</b> ${found.lifespan} </li>
     <li id="origin"><b>Origin:</b> ${found.origin} </li>
     `
+
+    const cardCollection = document.getElementById("breed-collection")
+    cardCollection.append(card)
+
+    const deleteBtn = document.createElement("button")
+    deleteBtn.addEventListener('click', () => {
+        card.remove()
+    })
+
+    deleteBtn.innerText = 'Delete'
     card.append(deleteBtn)
 })
 
