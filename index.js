@@ -1,7 +1,4 @@
-
 const selectBreed = document.querySelector('#selectBreed')
-
-let catObjects 
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -21,10 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
    .catch(err => console.log(err))
 })
 
-
 selectBreed.addEventListener("change", (e) => {
     e.preventDefault()
-
+    // console.log(e.target.value)
     const found = catObjects.find(catObj => e.target.value === catObj.id)
     console.log(found)
 
