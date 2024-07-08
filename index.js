@@ -12,15 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
         catOPtion.value = catObject.id
         catOPtion.innerText = catObject.name
 
+        // console.log(catObject)
         selectBreed.append(catOPtion)
+
     }) 
    })
    .catch(err => console.log(err))
 })
 
+
 selectBreed.addEventListener("change", (e) => {
     e.preventDefault()
-    // console.log(e.target.value)
+
     const found = catObjects.find(catObj => e.target.value === catObj.id)
     console.log(found)
 
@@ -47,5 +50,4 @@ selectBreed.addEventListener("change", (e) => {
     deleteBtn.innerText = 'Delete'
     card.append(deleteBtn)
 })
-
 

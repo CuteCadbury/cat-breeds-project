@@ -19,8 +19,12 @@
     <div class="select-wrapper">
         <select id="selectBreed" name="selectBreed"></select>
     </div>
-    
         <div id="breed-collection"></div>
+        <p id="footer">&copy; <span id="year"></span> ABC</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </body>
+
 </html>
 
